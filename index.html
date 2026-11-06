@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Porkxilla</title>
+
+<link rel="stylesheet" href="styles.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <p class="tagline">PORKXILLA JED'S PLACE — EVERYTHING PORK!!!</p>
+    <h1>The Ultimate <span>Grilled Experience</span></h1>
+    <p class="subtitle">Best pork grills in Abuja.</p>
+
+    <a href="#menu" class="btn primary">View Menu</a>
+    <a href="#order" class="btn secondary">Order Now</a>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="menu-section" id="menu">
+  <h2>Curated <span>Selections</span></h2>
+
+  <div class="menu-grid">
+
+    <div class="menu-item">
+      <img src="ngwo-ngwo-pork.jpg">
+      <div>
+        <h3>Ngwo Ngwo Pork <span>₦5,000</span></h3>
+        <p>Traditional Abacha style</p>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="sauteed-yams-potatoes.jpg">
+      <div>
+        <h3>Sauteed Yams <span>₦1,000</span></h3>
+        <p>Perfectly crisped</p>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="coleslaw.jpg">
+      <div>
+        <h3>Coleslaw <span>₦2,000</span></h3>
+        <p>Fresh and creamy</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="story">
+  <img src="ngwo-ngwo-pork.jpg">
+  <h2>Tradition Meets <span>The Flame</span></h2>
+  <p>We deliver the best pork experience in Abuja.</p>
+</section>
+
+<!-- BOTTOM -->
+<section class="bottom-section">
+
+  <div class="bottom-top">
+    <div class="bottom-text">
+      <h2>Fresh from Our Kitchen</h2>
+    </div>
+
+    <div class="bottom-image">
+      <img src="ngwo-ngwo-pork.jpg">
+    </div>
+  </div>
+
+  <div class="menu-cards">
+
+    <div class="card">
+      <h3>Menu</h3>
+      <ul>
+        <li>Skewered Pork</li>
+        <li>Pork Chops</li>
+        <li>Steak Pork</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Specials</h3>
+      <ul>
+        <li>Ngwo Ngwo</li>
+        <li>Yams</li>
+        <li>Coleslaw</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Options</h3>
+      <ul>
+        <li>Pickup</li>
+        <li>Delivery</li>
+        <li>Pay on delivery</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div style="text-align:center;">
+    <a href="#order" class="cta-btn">ORDER NOW</a>
+  </div>
+
+</section>
+
+<!-- ORDER -->
+<section class="form-section" id="order">
+  <h2>Place Order</h2>
+
+  <input id="name" placeholder="Name">
+  <input id="phone" placeholder="Phone">
+  <textarea id="orderText" placeholder="Your order"></textarea>
+
+  <br>
+  <button class="whatsapp-btn" onclick="sendOrder()">Send via WhatsApp</button>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Porkxilla</p>
+</footer>
+
+<script>
+function sendOrder(){
+  let name = document.getElementById("name").value;
+  let phone = document.getElementById("phone").value;
+  let order = document.getElementById("orderText").value;
+
+  let msg = `Name: ${name}%0APhone: ${phone}%0AOrder: ${order}`;
+  window.open(`https://wa.me/2349018004914?text=${msg}`);
+}
+</script>
+
+</body>
+</html>
